@@ -359,8 +359,8 @@ for bins in size_nest_elevations:
         #If comparison to histograms is interesting uncomment line below
         #plt.hist(bins,bins=50,normed=True)
         n+=1
-        plt.xlabel('elevation bin {}'.format(n)) 
-        plt.ylabel('sizes (m)')
+plt.xlabel('elevation (m)') 
+plt.ylabel('sizes (m)')
 
 
 #Next, I am interested in understand how lognormal fits would approximate
@@ -368,7 +368,7 @@ for bins in size_nest_elevations:
 plt.figure(6) 
 plt.title('Lognormal distributions of distance bins')
 plt.ylabel('Sizes (m)')
-plt.xlabel('Distance bins')
+plt.xlabel('Distance (m)')
 plt.ylim(0,0.125)
 n=1
 lognorm_mean_distance = []
@@ -391,7 +391,7 @@ plt.legend()
 plt.figure(7)
 plt.title('Lognormal distributions of distance bins')
 plt.ylabel('Sizes (m)')
-plt.xlabel('Distance bins')
+plt.xlabel('Distance bin (m)')
 n=1
 x = np.arange(0,200,0.1)
 for bins in size_nest_distances:
@@ -409,7 +409,7 @@ for bins in size_nest_distances:
 plt.figure(8) 
 plt.title('Lognormal distributions of elevations bins')
 plt.ylabel('Sizes (m)')
-plt.xlabel('Distance bins')
+plt.xlabel('Distance (m)')
 plt.ylim(0,0.125)
 n=1
 lognorm_mean_elevations = []

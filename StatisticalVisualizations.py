@@ -17,6 +17,7 @@ I refer to Scheller & Ehlmann (2020), JGR
 """
 import matplotlib
 import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.cm as cm
 import numpy as np
 import seaborn as sns
@@ -264,7 +265,7 @@ size_nest_distances = [size_700_725,size_725_750,size_750_775,size_775_800,size_
 size_nest_elevations = [size_0_200,size_200_400,size_400_600,size_600_800,size_800_1000,size_1000_1200,size_1200_1400,size_1400_1600,size_1600_1800,size_1800_2000,size_2000_2200,size_2200_2400,size_2400_2600]
     
 #I can now construct data frames of these binned arrays 
-df1=pd.DataFrame(size_nest_distances,['700_725','725_750','750_775','775_800','800_825','825_850','850_875','875_900','900_925','925_950','950_975','975_1000','1000_1025','1025_1050','1050_1075','1075_1100]']).T
+df1=pd.DataFrame(size_nest_distances,['700_725','725_750','750_775','775_800','800_825','825_850','850_875','875_900','900_925','925_950','950_975','975_1000','1000_1025','1025_1050','1050_1075','1075_1100']).T
 df2=pd.DataFrame((size_nest_elevations),['-0-200','-200-400','-400-600','-600-800','-800-1000','-1000-1200','-1200-1400','-1400-1600','-1600-1800','-1800-2000','-2000-2200','-2200-2400','-2400-2600']).T
 
 #Last I construct boxplots and violin plots of these distance and elevation bins
