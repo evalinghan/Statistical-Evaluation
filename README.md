@@ -1,5 +1,9 @@
 # Statistical Evaluations
 
+For this project, I had extracted a data set of rock sizes from Mars sattelite imagery at various distances and elevations of an impact crater. 
+I was interested in understanding whether there were any systematic changes in the rock sizes with variations in the recorded distances and elvations.  
+I solved this problem by using data visualization, performing statistical tests, and investigation bayesian distribution fits of binned data.  
+
 In this directory, you'll find 3 python scripts: 
 
 StatisticalVisualizations.py
@@ -8,7 +12,7 @@ MannWhitneyUtest.py
 
 DistributionFits.py
 
-Test data for the project can be found in the data directory.
+Example data for the project can be found in the data directory.
 These scripts are supposed to be used in the following order.
 
 
